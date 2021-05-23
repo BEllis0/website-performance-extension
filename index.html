@@ -1,8 +1,8 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -17,10 +17,13 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container">
-            <h1>Hello, World.</h1>
-            <button id="submitBtn">Get Page Report</button>
+            <h1 class="heading">Page Performance Report</h1>
+            <h3 class="subheading">Based on Google Lighthouse API data</h3>
+            <p class="bodyText">Export a XLSX report of performance indicators including:</p>
+            <p class="bodyText">Unused javaScript, unminified and duplicated javaScript, render-blocking resources, network requests, unminifed & unused CSS, unsized images, long tasks, redirects, font display, text compression and much more.</p>
+            <button id="submitBtn">Download Page Report</button>
         </div>
         
-        <script src="index.js" async defer></script>
+        <script src="./index.js"></script>
     </body>
 </html>
