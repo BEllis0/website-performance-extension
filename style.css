@@ -1,7 +1,27 @@
+html {
+    margin: 0;
+}
+
 .container {
-    padding: 10px;
+    padding: 15px;
+    width: 350px;
+    height: auto;
 }
 
 #submitBtn {
-    color: red;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: lightblue;
+    color:mintcream;
+}
+
+.subheading {
+    color:lightblue;
+}
+
+/* Options page */
+.optionsContainer {
+    text-align: center;
+    width: 100vw;
+    margin: 0 auto;
 }
