@@ -5,14 +5,15 @@ var ready = (callback) => {
 };
   
 ready(() => {
-    console.log(window)
 
+    let state;
     // event listener for submit button
     document.getElementById("submitBtn").addEventListener('click', () => {
 
         chrome.tabs.executeScript({
-            code: 'chrome.runtime.sendMessage({url: window.location.href}, function(response) { console.log("response in index.js", response) });'
+            code: `chrome.runtime.sendMessage({url: window.location.href}, function(response) { 
+                window.alert("Page Performance Report Extension: " + response.message)
+            });`
         });
     });
-    
 });
