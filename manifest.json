@@ -1,7 +1,7 @@
 {
-    "name": "Website Performance Chrome Extension",
+    "name": "Page Performance Report",
     "version": "1.0",
-    "description": "Scans the page you're on and generates a page performance report in xlsx.",
+    "description": "Scans the page you're on and generates a page performance report in xlsx using Google Lighthouse data.",
     "permissions": [
         "activeTab",
         "<all_urls>",
